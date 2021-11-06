@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/iosstyle"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/fanhui"
+            android:textColor="#ffffff"
+            android:id="@+id/next"
+            android:onClick="secondback"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="分析报告"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_weight="4"
+
+            />    //第一行
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/smile"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:text="你的总体成绩表现为优秀，但存在偏科现象，请注意！"
+            android:textSize="20sp"
+            android:id="@+id/totalAnalyze"
+            />
+
+    </LinearLayout> //shuxue yuwen//
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">//shuxue
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/edit"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:text="数学"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="建议：成绩表现优异，继续努力！"
+                android:textSize="15sp"
+                android:id="@+id/mathAnalyze"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/edit"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:text="  语文"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="0dp"
+                android:text="建议：你已经在挂科边缘了！"
+                android:textSize="15sp"
+                android:id="@+id/chineseAnalyze"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">//yingyu
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit"
+                android:layout_alignParentLeft="true"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:text="英语"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="建议：你已经在挂科边缘了！"
+                android:textSize="15sp"
+                android:id="@+id/englishAnalyze"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/edit"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:text="计算机"
+                android:textSize="30sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:text="建议：成绩表现优异，继续努力！"
+                android:textSize="15sp"
+                android:id="@+id/csAnalyze"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
